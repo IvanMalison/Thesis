@@ -1,0 +1,15 @@
+\contentsline {chapter}{Introduction}{1}
+\contentsline {chapter}{Chapter 1: GPU Computing}{3}
+\contentsline {section}{\numberline {1.1}Background}{3}
+\contentsline {section}{\numberline {1.2}OpenCL}{3}
+\contentsline {chapter}{Chapter 2: Matrix Multiplication}{5}
+\contentsline {chapter}{Chapter 3: Single Source Shortest Paths}{7}
+\contentsline {section}{\numberline {3.1}Background}{7}
+\contentsline {section}{\numberline {3.2}Sequential Algorithms}{7}
+\contentsline {subsection}{\numberline {3.2.1}Dijkstra's Algorithm}{7}
+\contentsline {subsection}{\numberline {3.2.2}Bellman Ford}{7}
+\contentsline {chapter}{Chapter 4: Prefix Sums}{9}
+\contentsline {section}{\numberline {4.1}Parallel Prefix Sums}{10}
+\contentsline {chapter}{Conclusion}{15}
+\contentsline {chapter}{Appendix A: The First Appendix}{17}
+\contentsline {chapter}{References}{19}
