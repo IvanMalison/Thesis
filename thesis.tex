@@ -224,7 +224,11 @@ the details of the implementation.
 
 In computing parallel-left-fold in the manner described above, some of the partial sums that constitute the output of parallel-prefix-sums are computed.
 
-
+\begin{figure}[h]
+\includegraphics[scale = .5]{correctsums.pdf}
+\caption{Each node in the tree that represents the final in a slot of the temporary array is circled. A solid line indicates that the value is correct, while a dashed line indicates that the value is incorrect.}
+\end{figure}
+\vspace{1pc}
 
 
 Specifically, all the partial sums that are placed at output indices $2^a-1$ for positive integers $a$ are correct. The other sums that are computed as intermediaries to the final sum are incomplete in the sense that they are the correct prefix sums for some subsequence of the input sequence.
