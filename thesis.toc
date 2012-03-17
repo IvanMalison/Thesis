@@ -10,6 +10,8 @@
 \contentsline {subsection}{\numberline {3.2.2}Bellman Ford}{7}
 \contentsline {chapter}{Chapter 4: Prefix Sums}{9}
 \contentsline {section}{\numberline {4.1}Parallel Prefix Sums}{10}
+\contentsline {subsection}{\numberline {4.1.1}Parallel Left Fold}{10}
+\contentsline {subsection}{\numberline {4.1.2}A First Attempt}{12}
 \contentsline {chapter}{Conclusion}{15}
 \contentsline {chapter}{Appendix A: The First Appendix}{17}
 \contentsline {chapter}{References}{19}
