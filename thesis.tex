@@ -180,7 +180,7 @@ form of a balanced binary tree.
 \end{figure}
 \vspace{1pc}
 
-This figure is drawn with the parents right aligned to indicate that
+This figure is drawn with parent nodes right aligned to indicate that
 the result of the addition ends up overwriting the slot originally
 occupied by the second summand. The bottom-most value in each column
 of the graphical representation will be the final value stored in the
@@ -226,23 +226,50 @@ In computing parallel-left-fold in the manner described above, some of the parti
 
 \begin{figure}[h]
 \includegraphics[scale = .75]{correctsums.pdf}
-\caption{Each node in the tree that represents the final in a slot of the temporary array is circled. A solid line indicates that the value is correct, while a dashed line indicates that the value is incorrect.}
+\caption{Each node in the tree that represents the final value in a slot of the temporary array is circled. A solid line indicates that the value is correct, while a dashed line indicates that the value is incorrect.}
 \end{figure}
 \vspace{1pc}
 
-Specifically, all the partial sums that are placed at output indices $2^a-1$ for positive integers $a$ are correct. The other sums that are computed as intermediaries to the final sum are incomplete in the sense that they are only correct prefix sums for some continuous subsequence of the input sequence. In general, the sum in the temporary array at the $i$th index after the execution of parallel-left fold is the sum of the subsequence ending at $a_i$, and including $2^j$ terms\footnote{$a_{i-(2^j-1)}, a_{i-(2^j-1)+1}, \ldots a_i$}, where $j$ is the final round in which that value was modified.
+Specifically, all the partial sums that are placed at output indices
+$2^a-1$ for positive integers $a$ are correct. The other sums that are
+computed as intermediaries to the final sum are incomplete in the
+sense that they are only correct prefix sums for some continuous
+subsequence of the input sequence.
+
+In general, the sum in the temporary array at the $i$th index after
+the execution of parallel-left fold is the sum of the subsequence
+ending at $a_i$, and including $2^j$ terms\footnote{$a_{i-(2^j-1)},
+  a_{i-(2^j-1)+1}, \ldots a_i$}, where $j$ is the final round in which
+that value was modified.
+
 \begin{proof}
-What we will prove is that at the value at any array index $i$ that is active during the $j$th reduction is the subsequence of length $2^j$ ending at the $i$th value of the input sequence. This directly implies that the value that remains after the execution of the entire algorithm will be the value after the final reduction in which that value was changed.
+What we will prove is that the value at any array index $i$ that is active during the $j$th reduction is the subsequence of length $2^j$ ending at the $i$th value of the input sequence. This directly implies that the value that remains after the execution of the entire algorithm will be the value after the final reduction in which that value was changed.
 
 We prove this claim by induction on $j$. When $j=0$ the values in the temporary array are just the values of the input sequence. Since $j=0$, $2^j = 1$, and indeed, the values of the input sequence are the trivial sums of length one, 
 
 Suppose that the node $i$  is active during the $j+1$th reduction step. Then by our induction assumption, its value just before that reduction step is executed is the correct subsequence of length $2^j$. Similarly, the array value that is to be added to our value was also active at the $j$th reduction
-\footnote{The value at the $z$th array index is active in the $j+1$th round when $z+1 \mod 2^{j+1} = 0$ and. Thus $z - 2^j + 1 = 0 \mod 2^j$, since both $z+1$ and $2^j = 0 \mod 2^j$.}
-, and so its subsequence is also the correct subsequence of length $2^j$. As noted in the previous section, the distance between terms added in the $j$th reduction is always $2^j$, which means that these two sequences have no overlapping terms, and no missing terms in between them. By the associativity of the operator that is being used, the value that results from applying $\oplus$ to these two terms is the subsequence ending at the rightmost index of length $2^j + 2^j = 2 \cdot 2^j = 2^{j+1}$.
+
+\footnote{The value at the $z$th array index is active in the $j+1$th
+  round when $z+1 \mod 2^{j+1} = 0$ (and $z \neq 0$). Thus $z - 2^j +
+  1 = 0 \mod 2^j$, since both $z+1$ and $2^j = 0 \mod 2^j$. This is
+  the index of the value on the left hand side of the $\oplus$
+  operation.}
+
+, and so its subsequence is the $\oplus$ of the sequence of length
+$2^j$ ending at that index. As noted in the previous section, the
+distance between terms added in the $j$th reduction is always $2^j$,
+which means that these two sequences have no overlapping terms, and no
+missing terms in between them. By the associativity of the operator
+that is being used, the value that results from applying $\oplus$ to
+these two terms is value of the subsequence ending at the rightmost index of length $2^j + 2^j = 2 \cdot 2^j = 2^{j+1}$.
 \end{proof}
 
-With this fact, one can formally determine which 
-
+With this fact in hand, it is easy to determine which array indices
+contain correct values. Since the value at the $i$th index of the
+array is correct when it contains the $\oplus$ of the $i$ terms, any
+index $i$ for which $i+1 = \max \{ 2^a : i+1 \mod 2^a = 0 \}$ will contain
+a correct value. It is easy to see that this condition is only
+satisfied when $i+1 = 2^a$ for some $a$.
 
 \begin{algorithm}[h!]
 \caption{parallel-prefix-sums where $p = n/2$ and $n=2^k$}
