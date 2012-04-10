@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  20 MAR 2012 18:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  8 APR 2012 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,13 +352,13 @@ Non-PDF special ignored!
 
 ] [3] [4
 
-] (./thesis.toc)
+] (./thesis.toc [5])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [5] [6
+ [6] [7
 
-] [7]
+]
 [8
 
 ] [9] [10
@@ -369,83 +369,155 @@ Non-PDF special ignored!
 
 ]
 Chapter 1.
+
+Overfull \hbox (1.97226pt too wide) in paragraph at lines 53--54
+[]\OT1/cmr/m/n/12 The pro-cess by which GPUs ren-der graph-ics is called the gr
+aph-ics pipeline. Though
+ []
+
+<graphics_pipeline_simple.pdf, id=55, 361.35pt x 144.54pt>
+File: graphics_pipeline_simple.pdf Graphic file (type pdf)
+
+<use graphics_pipeline_simple.pdf>
+Package pdftex.def Info: graphics_pipeline_simple.pdf used on input line 60.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [3]
+Overfull \hbox (7.3672pt too wide) in paragraph at lines 79--80
+[]\OT1/cmr/m/n/12 The GPU takes an en-tirely dif-fer-ent ap-proach to im-ple-me
+nt-ing the graph-ics pipeline.
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] [5] [6]
+[4 <./graphics_pipeline_simple.pdf>] [5]
+<basic_gpu_architecture.pdf, id=89, 722.7pt x 325.215pt>
+File: basic_gpu_architecture.pdf Graphic file (type pdf)
+
+<use basic_gpu_architecture.pdf>
+Package pdftex.def Info: basic_gpu_architecture.pdf used on input line 101.
+(pdftex.def)             Requested size: 361.3491pt x 162.6071pt.
+
+Overfull \hbox (14.78648pt too wide) in paragraph at lines 108--109
+[]\OT1/cmr/m/n/12 Figure 1.2.1[] de-picts the im-por-tant ar-chi-tec-tural fea-
+tures of a mod-ern CUDA/OpenCL
+ []
+
+[6 <./basic_gpu_architecture.pdf>]
+<streamingmp.pdf, id=115, 216.81pt x 216.81pt>
+File: streamingmp.pdf Graphic file (type pdf)
+ <use streamingmp.pdf>
+Package pdftex.def Info: streamingmp.pdf used on input line 122.
+(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
+ [7 <./streamingmp.pdf>] [8]
+Underfull \vbox (badness 3058) has occurred while \output is active []
+
+ [9]
+[10]
 Chapter 2.
-[7
+[11
 
-] [8
+] [12] [13] <SimpleCoalescedLoad.pdf, id=166, 578.16pt x 144.54pt>
+File: SimpleCoalescedLoad.pdf Graphic file (type pdf)
 
-]
-Chapter 3.
-[9] [10
+<use SimpleCoalescedLoad.pdf>
+Package pdftex.def Info: SimpleCoalescedLoad.pdf used on input line 228.
+(pdftex.def)             Requested size: 393.1436pt x 98.28587pt.
 
-]
-Chapter 4.
-[11] [12] <parallel-left-fold-tree.pdf, id=94, 397.485pt x 216.81pt>
-File: parallel-left-fold-tree.pdf Graphic file (type pdf)
-
-<use parallel-left-fold-tree.pdf>
-Package pdftex.def Info: parallel-left-fold-tree.pdf used on input line 242.
-(pdftex.def)             Requested size: 397.48402pt x 216.80946pt.
- [13 <./parallel-left-fold-tree.pdf>]
-<correctsums.pdf, id=119, 578.16pt x 216.81pt>
-File: correctsums.pdf Graphic file (type pdf)
- <use correctsums.pdf>
-Package pdftex.def Info: correctsums.pdf used on input line 293.
-(pdftex.def)             Requested size: 433.61893pt x 162.60709pt.
- [14 <./correctsums.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15] [16] [17
+[14] <NoGo.pdf, id=170, 578.16pt x 144.54pt>
+File: NoGo.pdf Graphic file (type pdf)
+ <use NoGo.pdf>
+Package pdftex.def Info: NoGo.pdf used on input line 240.
+(pdftex.def)             Requested size: 393.1436pt x 98.28587pt.
+ [15 <./SimpleCoalescedLoad.pdf> <./NoGo.pdf>] [16] [17] [18]
+Chapter 3.
+[19
 
-] [18
+] [20
+
+]
+Chapter 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+[22]
+Chapter 5.
+[23
+
+] [24] <parallel-left-fold-tree.pdf, id=256, 397.485pt x 216.81pt>
+File: parallel-left-fold-tree.pdf Graphic file (type pdf)
+
+<use parallel-left-fold-tree.pdf>
+Package pdftex.def Info: parallel-left-fold-tree.pdf used on input line 467.
+(pdftex.def)             Requested size: 397.48402pt x 216.80946pt.
+ [25 <./parallel-left-fold-tree.pdf>]
+<correctsums.pdf, id=281, 578.16pt x 216.81pt>
+File: correctsums.pdf Graphic file (type pdf)
+ <use correctsums.pdf>
+Package pdftex.def Info: correctsums.pdf used on input line 518.
+(pdftex.def)             Requested size: 433.61893pt x 162.60709pt.
+ [26 <./correctsums.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] [28] [29
+
+] [30
 
 ]
 Appendix A.
-[19] [20
+[31] [32
 
-] (./thesis.bbl [21
+] (./thesis.bbl [33
 
-]) [22] (./thesis.aux) ) 
+]) [34] (./thesis.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3544 strings out of 493633
- 46204 string characters out of 3143378
- 110845 words of memory out of 3000000
- 6752 multiletter control sequences out of 15000+200000
+ 3576 strings out of 493633
+ 46871 string characters out of 3143378
+ 110932 words of memory out of 3000000
+ 6779 multiletter control sequences out of 15000+200000
  13612 words of font info for 56 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,10n,45p,1200b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
-b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
-cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (36 pages, 497556 bytes).
+ 38i,11n,45p,1258b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2011
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2011/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2011/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (48 pages, 1307456 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 402 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
